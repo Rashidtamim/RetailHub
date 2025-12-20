@@ -1,0 +1,3 @@
+This is a full-stack e-commerce application developed using Django technology. E-commerce application examples that developers can implement using this platform include products management, user authentication, and order and carts management functions. The application also follows the scalability and clean architecture approaches used in Django technology and is therefore fit for driving understanding and exploration as well as for commercial implementation.
+
+The aim of this project will be to apply the skills acquired from the tutorials on the backend of web development and the Django framework, focusing on designing an e-commerce platform.
