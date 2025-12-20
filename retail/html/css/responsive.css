@@ -1,0 +1,132 @@
+/* ============================================= */
+/* ========== RESPONSIVE STYLES =============== */
+/* ============================================= */
+
+/* ================= MOBILE FIRST ================= */
+.mobile-block {
+  display: none;
+}
+
+/* ------------------ Extra Large Devices >=1200px ---------------- */
+@media (min-width: 1200px) {
+  /* Custom desktop adjustments */
+  .slider-main .item-slide {
+    height: 500px;
+  }
+
+  .section-header .widgets-wrap,
+  .section-header .search-wrap {
+    margin-top: 0;
+  }
+
+  .table-shopping-cart tr td:first-child {
+    width: 300px;
+  }
+
+  .table-shopping-cart .itemside .aside {
+    display: block;
+  }
+}
+
+/* ------------------ Large Devices <1200px ---------------- */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .slider-main .item-slide {
+    height: auto;
+  }
+
+  .section-header .widgets-wrap,
+  .section-header .search-wrap {
+    margin-top: 1rem;
+  }
+
+  .table-shopping-cart tr td:first-child {
+    width: 250px;
+  }
+
+  .table-shopping-cart .itemside .info {
+    padding: 0;
+  }
+
+  .table-shopping-cart .itemside .aside {
+    display: none;
+  }
+}
+
+/* ------------------ Medium Devices <992px ---------------- */
+@media (max-width: 991px) and (min-width: 768px) {
+  .mobile-order-first { order: -1; }
+  .mobile-order-1 { order: 1; }
+  .mobile-order-2 { order: 2; }
+  .mobile-order-3 { order: 3; }
+
+  .section-header .logo {
+    max-height: 50px;
+    width: auto;
+  }
+
+  .section-header .search {
+    margin-top: 0.75rem;
+  }
+
+  .navbar-expand .navbar-collapse {
+    flex-direction: column;
+  }
+}
+
+/* ------------------ Small Devices <768px (Mobile) ---------------- */
+@media (max-width: 767px) {
+  .mobile-block {
+    display: block;
+  }
+
+  .mobile-order-first { order: -1; }
+  .mobile-order-1 { order: 1; }
+  .mobile-order-2 { order: 2; }
+  .mobile-order-3 { order: 3; }
+
+  .section-header .logo {
+    max-height: 40px;
+    width: auto;
+  }
+
+  .section-header .search {
+    margin-top: 1rem;
+  }
+
+  .navbar-expand .navbar-collapse {
+    flex-direction: column;
+  }
+
+  .table-shopping-cart tr td:first-child {
+    width: 100%;
+    display: block;
+  }
+
+  .table-shopping-cart .itemside {
+    flex-direction: column;
+  }
+
+  .table-shopping-cart .itemside .info {
+    padding: 10px 0;
+  }
+
+  .table-shopping-cart .itemside .aside {
+    display: none;
+  }
+}
+
+/* ------------------ Extra Small Devices <576px ---------------- */
+@media (max-width: 575px) {
+  .section-header .widgets-wrap,
+  .section-header .search-wrap {
+    margin-top: 0.5rem;
+  }
+
+  .slider-main .item-slide img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* =============== MAP FILE ================= */
+ /*# sourceMappingURL=responsive.css.map */
