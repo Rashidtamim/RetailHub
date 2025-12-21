@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+from django.contrib.auth.models import User
+
+from base.models import BaseModel
+
+
+class Profile(BaseModel):
+    user = models.OneToOneField(User , on_delete=models.CASCADE , related_name='profile')
+    is_email_verified = models.BooleanField(default=False)
+    profile_image = models.ImageField(upload_to='profile')
