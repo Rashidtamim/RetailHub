@@ -10,6 +10,16 @@ class Category(BaseModel):
     category_image = models.ImageField(upload_to="catgories")
 
 
+    def save(self , *args , **kwargs):
+        self.slug = slugify(self.category_name)
+        super(Category ,self).save(*args , **kwargs)
+
+
+    def __str__(self) -> str:
+        return self.category_name
+
+
+
   
 
 
@@ -24,6 +34,15 @@ class Product(BaseModel):
     category = models.ForeignKey(Category , on_delete=models.CASCADE , related_name="products")
     price = models.IntegerField()
     product_desription = models.TextField()
+
+
+    def save(self , *args , **kwargs):
+        self.slug = slugify(self.product_name)
+        super(Product ,self).save(*args , **kwargs)
+
+
+    def __str__(self) -> str:
+        return self.product_name
 
 
 
