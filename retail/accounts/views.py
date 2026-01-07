@@ -28,7 +28,7 @@ def user_login(request):
         user_obj = authenticate(username = email , password= password)
         if user_obj:
             login(request , user_obj)
-            return redirect('/')
+            return redirect('home2')
 
         
 
@@ -63,6 +63,13 @@ def user_registration(request):
 
 
     return render(request ,'accounts/register.html')
+
+
+def user_logout(request):
+    
+    logout(request)
+    
+    return redirect('login')
 
 
 
