@@ -28,7 +28,7 @@ def user_login(request):
         user_obj = authenticate(username = email , password= password)
         if user_obj:
             login(request , user_obj)
-            return redirect('home2')
+            return redirect('home')
 
         
 
